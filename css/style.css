@@ -39,6 +39,7 @@ a:hover{
   }
 
 .container{
+    
    width: 80%;
    margin-left:2%;
    overflow:hidden;
@@ -60,10 +61,15 @@ a:hover{
 #navbar li{
     display: inline;
 }
+.container2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
 #buy{
-   
-    float:left;
-    width:51%;
+    flex:1;
+    float: left;
+    width:49%;
     box-sizing: border-box;
     padding-right:0px;
     padding-left:1%;
@@ -72,18 +78,18 @@ a:hover{
     /* Place the button 30px from the right */  
 }
 #sell{
-    
-    float:right;
-    width:49%;
+    flex:1;
+    float: right;
+    width:51%;
     box-sizing: border-box;
     padding-left: 0px;
-    padding-right:1px;
+    padding-right:0px;
     padding-top:2%;
     padding-bottom:2%;
 }
 .button{
     text-align: center;
-    position: fixed; /* Fixed/sticky position */
+    position: absolute; /* Fixed/sticky position */
     width:48%;
     box-sizing: border-box;
      /* Make sure it does not overlap */
@@ -102,11 +108,11 @@ a:hover{
     background-color:rgb(211, 211, 211) ;
 }
 #main-footer{
-    padding-top: 62%;
+    padding-top: 70%;
     text-align: center;
     
 }
-@media(max-width:600px){
+/*@media(max-width:600px){
     #buy{
         width:100%;
         float: none;
@@ -117,5 +123,17 @@ a:hover{
         width:100%;
         float:none;
     }
-}
+}*/
 
+@media(min-width:468px){
+    .container2{
+      display:flex;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+    }
+}

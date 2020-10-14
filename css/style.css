@@ -11,7 +11,16 @@
     height: 10vh;
     background: #5b78c7;
   }
-  
+  nav ul{
+    float: right;
+  }
+  nav h1{
+    float:left;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 2%;
+    font-weight: bold;
+  }
   .nav-links {
     display: flex;
     list-style: none;

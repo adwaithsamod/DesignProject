@@ -1,5 +1,5 @@
 document.getElementById('text').addEventListener('click',()  =>{
-    window.location.href="../selltext/selltext.html";
+    window.location.href="../text/text.html";
 });
 
 document.getElementById('tool').addEventListener('click',()  =>{

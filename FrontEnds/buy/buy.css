@@ -139,29 +139,15 @@ nav ul li:hover a{
 
 
 
-/*Showcase*/
-#showcase{
-    min-height: 230px;
-    color: #ffffff;
-    text-align: center;
-}
-#showcase h1{
-    margin-top: 100px;
-    font-size: 50px;
-    font-family: 'Cabin', sans-serif;
-    margin-bottom: 10px;
-}
-
-
-
 
 /*Tiles Section*/
-#tiles .container{
+#tiles{
+    margin:10%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-#tiles .container .tile{
+#tiles .tile{
     margin-top: 30px;
     height: 260px;
     width: 250px;
@@ -175,14 +161,14 @@ nav ul li:hover a{
     transition: all 0.2s;
 }
 
-#tiles .container h2{
+#tiles h2{
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
     color: #000000;
     text-transform: uppercase;
 }
 
-#tiles .container .tile:hover{
+#tiles .tile:hover{
     transform: scale(1.02);
 }
 
@@ -190,12 +176,12 @@ nav ul li:hover a{
     #showcase{
         min-height: 100px;
     }
-    #tiles .container{
+    #tiles{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #tiles .container .tile{
+    #tiles .tile{
         margin-top: 30px;
     }
 }

@@ -1,15 +1,15 @@
-document.getElementById('text').addEventListener('click',()  =>{
-    window.location.href="../text/text.html";
+document.getElementById('first').addEventListener('click',()  =>{
+    window.location.href="../firstyear/firstyear.html";
 });
 
-document.getElementById('tool').addEventListener('click',()  =>{
-    window.location.href="../tool/tool.html";
+document.getElementById('second').addEventListener('click',()  =>{
+    window.location.href="../secondyear/secondyear.html";
 });
 
-document.getElementById('calc').addEventListener('click',()  =>{
-    window.location.href="../calc/calc.html";
+document.getElementById('third').addEventListener('click',()  =>{
+    window.location.href="../thirdyear/thirdyear.html";
 });
 
-document.getElementById('extra').addEventListener('click',()  =>{
-    window.location.href="../extra/extra.html";
+document.getElementById('fourth').addEventListener('click',()  =>{
+    window.location.href="../fourthyear/fourthyear.html";
 });

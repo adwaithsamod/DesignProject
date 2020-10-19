@@ -3,13 +3,13 @@ document.getElementById('first').addEventListener('click',()  =>{
 });
 
 document.getElementById('second').addEventListener('click',()  =>{
-    window.location.href="../secondyear/secondyear.html";
+    window.location.href="../btsecondyear/btsecondyear.html";
 });
 
 document.getElementById('third').addEventListener('click',()  =>{
-    window.location.href="../thirdyear/thirdyear.html";
+    window.location.href="../btthirdyear/btthirdyear.html";
 });
 
 document.getElementById('fourth').addEventListener('click',()  =>{
-    window.location.href="../fourthyear/fourthyear.html";
+    window.location.href="../btfourthyear/btfourthyear.html";
 });

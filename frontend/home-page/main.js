@@ -1,21 +1,7 @@
 document.getElementById('buy').addEventListener('click',()  =>{
-    //window.location.href="#tiles-sell";
-  var elmnt = document.getElementById("tiles-sell");
-  elmnt.scrollIntoView();
+  window.location.href="../buy.html";
 });
 
 document.getElementById('sell').addEventListener('click',()  =>{
-    //window.location.href="#tiles.sell";
-    var elmnt = document.getElementById("tiles-sell");
-  elmnt.scrollIntoView();
+  window.location.href="../sell.html";
 });
-
-//Home Button
-
-document.getElementById('home-btn').addEventListener('click',()  =>{
-  //window.location.href="#tiles.sell";
-  var elmnt = document.getElementById("navbar");
-elmnt.scrollIntoView();
-});
-
-

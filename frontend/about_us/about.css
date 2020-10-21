@@ -7,18 +7,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    min-height: 100vh;
-    background-color: #f1f1f1;
+    background: url('images/ecommerce-3546296.jpg') no-repeat 
 }
-/* navbar */
 nav{
     background: #151515;
     padding: 5px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 nav ul{
     list-style: none;
@@ -74,9 +68,12 @@ nav ul li:hover a{
     color: #33ffff;
 }
 
+
+
+
 .about-section{
     font-family: Arial, Helvetica, sans-serif;
-    background: url(../home-page/images/WhatsApp\ Image\ 2020-10-18\ at\ 6.45.23\ PM.jpeg);
+    background: url(pic.jpg);
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
@@ -112,11 +109,10 @@ nav ul li:hover a{
     font-size: 13px;
 }
 
+
+
 /*Media Queries*/
 @media all and (max-width: 900px){
-    body{
-        overflow: auto;
-    }
     nav{
         padding: 5px 30px;
     }
@@ -182,6 +178,7 @@ nav ul li:hover a{
         transform: rotate(135deg);
     }
 }
+
 @media screen and (max-width:1200px){
     .inner-container{
         padding: 80px;
@@ -197,3 +194,4 @@ nav ul li:hover a{
         width: 100%;
     }
 }
+

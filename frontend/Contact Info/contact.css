@@ -18,11 +18,15 @@ body{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 10%;
+  flex-direction: column;
+  padding-top: 5%;
+}
+.the{
+  margin-top: 2%;
 }
 .tile{
   height: 360px;
-  width: 350px;
+  width: 80%;
   background: #ffffff;
   border-radius: 20px;
   display: flex;
@@ -71,12 +75,12 @@ body{
 }
 
 /* FLOAT USES  */
-.card-icon{
+/* .card-icon{
   float:left;
 }
 .tile .text{
   float:right;
-}
+} */
 
 
 
@@ -204,11 +208,21 @@ nav ul li:hover a{
       transform: rotate(135deg);
   }
   .contact-info{
-    flex-direction: column;
+    padding-top: 10%;
+    flex-direction: row;
   }
   .tile{
     width: 100%;
     max-width: 300px;
     margin: 10px 0;
   }
+  
+  /* FLOAT USES  */
+  .card-icon{
+    float:left;
+  }
+  .tile .text{
+    float:right;
+  }
+
 }

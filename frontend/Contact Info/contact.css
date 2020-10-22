@@ -7,86 +7,78 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
-  background: #f1f1f1;
-  min-height: 100vh;
-  background: url("../home-page/images/WhatsApp\ Image\ 2020-10-18\ at\ 6.45.23\ PM.jpeg");
+  background: url('../home-page/images/WhatsApp\ Image\ 2020-10-18\ at\ 6.45.23\ PM.jpeg');
 }
 
-.contact-info{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding-top: 5%;
-}
-.the{
-  margin-top: 2%;
-}
-.tile{
-  height: 360px;
-  width: 80%;
-  background: #ffffff;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: #151515;
-  transition: all 0.2s;
+.wrapper{
+  margin-top: 7%;
 }
 
-.card-icon{
-  font-size: 28px;
-  /* background: #ff6348; */
-  width: 60px;
-  height: 60px;
+.wrapper h1{
+  text-transform:uppercase;
+  font-size: 52px;
+  margin-bottom: 60px;
   text-align: center;
-  line-height: 60px !important;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  transition: 0.3s linear;
-}
-/* 
-.tile:hover .card-icon{
-  background: none;
-  /* color: #ff6348; */
-  /* transform: scale(1.6);
-} */ 
-
-.tile p{
-  margin-top: 20px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  max-height: 0;
-  opacity: 1;
-  transition: 0.3s linear;
+  background: #fff;
 }
 
-/* .tile:hover p{
-  max-height: 40px;
-  opacity: 1;
-} */
-
-.tile img{
-  width:90px;
-  height:90px;
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  padding: 5px;
 }
-
-/* FLOAT USES  */
-/* .card-icon{
-  float:left;
-}
-.tile .text{
-  float:right;
-} */
-
-
 
 nav{
   background: #151515;
   padding: 5px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 nav ul{
   list-style: none;
@@ -143,6 +135,9 @@ nav ul li:hover a{
 }
 /*Media Queries*/
 @media all and (max-width: 900px){
+  body{
+      overflow: auto;
+  }
   nav{
       padding: 5px 30px;
   }
@@ -207,22 +202,4 @@ nav ul li:hover a{
       top: 0;
       transform: rotate(135deg);
   }
-  .contact-info{
-    padding-top: 10%;
-    flex-direction: row;
-  }
-  .tile{
-    width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
-  }
-  
-  /* FLOAT USES  */
-  .card-icon{
-    float:left;
-  }
-  .tile .text{
-    float:right;
-  }
-
 }

@@ -82,10 +82,10 @@ nav ul li:hover a{
 }
 
 .inner-container{
-    width: 55%;
+    width: 50%;
     background-color: #fdfdfd;
     padding: 150px;
-    border-radius: 20px;
+    position: relative;
 }
 
 .inner-container h1{
@@ -93,6 +93,17 @@ nav ul li:hover a{
     font-size: 30px;
     font-weight: 900;
 }
+
+.inner-container img{
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #fff;
+  }
 
 .text{
     font-size: 13px;

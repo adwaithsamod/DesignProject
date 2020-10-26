@@ -11,13 +11,23 @@
 body{
   background: url('../home-page/images/WhatsApp\ Image\ 2020-10-18\ at\ 6.45.23\ PM.jpeg');
 }
-.icon{
+.non{
+  padding-top: 10%;
+}
+.social{
+  padding-top: 10%;
+  display:flex;
+  justify-content: space-evenly;
+}
+.icon,.nonicons{
   height:20px;
   width:20px;
+  border-radius: 50%;
+  transition: all .5s;
 }
 .icon:hover{
   cursor:pointer;
-  transform: scale(1.2);
+  transform: rotate(360deg);
 }
 .wrapper{
   margin-top: 5%;

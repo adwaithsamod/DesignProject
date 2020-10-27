@@ -23,11 +23,29 @@ body{
   height:20px;
   width:20px;
   border-radius: 50%;
-  transition: all .5s;
+  transition: all .4s;
 }
 .icon:hover{
-  cursor:pointer;
+  /* cursor:pointer; */
   transform: rotate(360deg);
+}
+.insta,.twitter,.github,.linkedin{
+  /* color:black; */
+  padding:14px;  
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid black;
+  transition: all .4s;
+}
+.insta{color:rgb(252, 52, 52);}
+.linkedin{color:blue;}
+.twitter{color:rgb(59, 202, 250);}
+.insta:hover,.linkedin:hover,.twitter:hover,.github:hover{
+  background: rgb(235, 235, 235);
+  border:2px solid rgb(235, 235, 235);;
+  opacity:.9;
+  box-shadow: 2px 2px 24px #000;
+ transform: rotate(360deg);
 }
 .wrapper{
   margin-top: 5%;
@@ -51,14 +69,15 @@ body{
 }
 
 .team .team_member{
-  background: #fff;
+  background: rgb(235, 235, 235);
   margin: 20px;
   margin-bottom: 50px;
   width: 300px;
   padding: 20px;
   line-height: 20px;
-  color: #8e8b8b;  
+  color: #5c5b5b;  
   position: relative;
+  opacity:0.9;
 }
 
 .team .team_member h3{
@@ -68,7 +87,7 @@ body{
 }
 
 .team .team_member p.role{
-  color: #ccc;
+  color: rgb(177, 177, 177);
   margin: 12px 0;
   font-size: 12px;
   text-transform: uppercase;

@@ -31,21 +31,29 @@ body{
 }
 .insta,.twitter,.github,.linkedin{
   /* color:black; */
-  padding:14px;  
+  padding:10px;  
   text-decoration: none;
   border-radius: 50%;
   border: 2px solid black;
   transition: all .4s;
 }
-.insta{color:rgb(252, 52, 52);}
+.insta{color:black;}
 .linkedin{color:blue;}
+/* .github{color:white;} */
 .twitter{color:rgb(59, 202, 250);}
 .insta:hover,.linkedin:hover,.twitter:hover,.github:hover{
-  background: rgb(235, 235, 235);
-  border:2px solid rgb(235, 235, 235);;
+  background: grey;
+  /* background: rgb(235, 235, 235); */
+  /* background: black; */
+  /* border:2px solid rgb(235, 235, 235); */
+  /* border:2px solid black; */
+  /* background: darkblue; */
   opacity:.9;
   box-shadow: 2px 2px 24px #000;
  transform: rotate(360deg);
+}
+.github:hover{
+  color:black;
 }
 .wrapper{
   margin-top: 5%;
@@ -70,6 +78,7 @@ body{
 
 .team .team_member{
   background: rgb(235, 235, 235);
+  /* background: darkblue; */
   margin: 20px;
   margin-bottom: 50px;
   width: 300px;
@@ -79,7 +88,6 @@ body{
   position: relative;
   opacity:0.9;
 }
-
 .team .team_member h3{
   color: #81c644;
   font-size: 26px;

@@ -39,7 +39,7 @@ body{
 }
 .insta{color:black;}
 .linkedin{color:blue;}
-/* .github{color:white;} */
+.github{color:black;}
 .twitter{color:rgb(59, 202, 250);}
 .insta:hover,.linkedin:hover,.twitter:hover,.github:hover{
   background: grey;

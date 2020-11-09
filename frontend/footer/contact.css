@@ -204,9 +204,7 @@ textarea{
    html,body{
     height:100%;
  }
-/* .myfooter .full{
- display: flex;
-} */
+
 
 .myfooter{
  color:white;
@@ -214,7 +212,9 @@ textarea{
  background-color:  #151515;
  width: 100%;
 }
-
+.full{
+    display: flex;
+}
 .copy p{
     margin-bottom: 0;
     text-align: center;
@@ -227,9 +227,10 @@ textarea{
  margin-bottom: 20px;
  color:#fff;
 }
-/* .myfooter .top i:before{
- content:none;
-} */
+.myfooter .top i:hover{
+    transform: scale(1.05);
+}
+
 .myfooter .footerlinks a{
  display: inline-block;
  text-decoration: none;
@@ -240,12 +241,17 @@ textarea{
  transform:scale(1.1);
 }
 
-.myfooter .footerleft,
-.myfooter .footercenter,
-.myfooter .footerright{
+.myfooter .footer-center,
+.myfooter .footer-right,
+.myfooter .footer-left{
  display: inline-block;
- width:33%;
+ flex:1;
  vertical-align: top;
+}
+.myfooter .footer-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .myfooter .name{
  vertical-align: middle;
@@ -253,24 +259,33 @@ textarea{
  align-items: center;
 
 }
-.myfooter .footercenter i{
+.myfooter .footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: jus; */
+}
+.myfooter .footer-right i{
  border-radius: 50%;
  background: rgb(78, 74, 74);
  text-align: center;
  line-height: 30px;
  width:30px;
 }
-.myfooter .footercenter p{
+.myfooter .footer-right p{
  display: inline;
  vertical-align: middle;
  margin:0;
  font-weight: normal;
 }
-.myfooter .footercenter a{
+.myfooter .footer-right a{
  text-decoration: none;
  color:#66ffff;
 }
-.myfooter .footerleft .footerlinks a:before{
+.myfooter .footer-right a:hover{
+    color:#04b6b6;
+}
+.myfooter .footer-center .footerlinks a:before{
  content:"|";
  font-weight: normal;
  font-size: 20px;
@@ -280,13 +295,13 @@ textarea{
  display: inline-block;
  left:0;
 }
-.myfooter .footerleft .footerlinks .link1:before{
+.myfooter .footer-center .footerlinks .link1:before{
  content: none;
 }
-.myfooter .footerright h3{
+.myfooter .footer-left h3{
  text-align: right;
 }
-.myfooter .footerright .footerMPAC span{
+.myfooter .footer-left .footerMPAC span{
  display: block;
  color:#fff;
  font-size: 16px;
@@ -294,18 +309,19 @@ textarea{
  font-family: 'Raleway',sans-serif;
  margin-bottom: 20px;
 }
-.myfooter .footerright{
+.myfooter .footer-left{
  width:30%;
  padding-right: 0%;
 }
-.myfooter .footerright .footersocial{
+.myfooter .footer-left .footersocial{
 display: flex;
 justify-content: center;
+padding-bottom: 5px;
 }
-.myfooter .footerright .footersocial a{
+.myfooter .footer-left .footersocial a{
  display: inline-block;
  color:#fff;
- border-radius: 5px;
+ border-radius: 4px;
  background:rgb(78, 74, 74) ;
  line-height:30px;
  width:30px;
@@ -314,35 +330,45 @@ justify-content: center;
  vertical-align: middle;
  /* justify-content: space-around; */
  /* align-items: center; */
- 
+}
+.myfooter .footer-left .footersocial a:hover{
+    transform: scale(1.2);
+  
 }
 
-.myfooter .footerright .footerMPAC{
- text-align: justify;
+.myfooter .footer-left .footerMPAC{
+ /* text-align: justify; */
+ padding-bottom: 5px;
 }
-.myfooter .footerright .footerMPAC span{
+.myfooter .footer-left .footerMPAC span{
  font-weight: 900;
- text-align: center;
+ /* text-align: center; */
 }
 
+/*---------------------------------------------------- IMPORTANT!!!-------------------------------------------------------- */
 
+
+/* This is to make sure that the footer stays at the bottom and the class may not be .container make changes accordingly */
+/* take the biggest div tag in body that takes up the important part */
 .container{
- min-height:calc(100vh - 76.8px - 58.4px);
+ min-height:calc(100vh - 210.4px);
 }
+
+
 @media (max-width:760px)
 {
     .myfooter .full{
         font-size: 14px;
-    
+        flex-direction: column;
     }
-    .myfooter .footerleft,
-    .myfooter .footercenter,
-    .myfooter .footerright{
+    .myfooter .footer-center,
+    .myfooter .footer-right,
+    .myfooter .footer-left{
         display:block;
         text-align: center;
         width:100%;
     }
-    .myfooter .footerright .footerMPAC{
+    /* .myfooter .footer-left .footerMPAC{
         text-align: center;
-    }
+    } */
 }
